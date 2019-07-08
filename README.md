@@ -4,6 +4,7 @@ Html5
 Css3
 Flexbox
 Sass
+JQuery
 
 /_convierte los elementos en cajas flexibles_/
 display: flex
