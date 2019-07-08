@@ -6,29 +6,29 @@ Flexbox
 Sass
 JQuery
 
-/_convierte los elementos en cajas flexibles_/
+/* Convierte los elementos en cajas flexibles */
 display: flex
 
-/_justificame el contenido con espaciado_/
+/* Justificame el contenido con espaciado */
 justify-content: space-between
 
-/_Para ocupar 100% todo el alto de la ventana_/
+/* Para ocupar 100% todo el alto de la ventana */
 height: 100vh
 
-/_Nos adapta la imagen al tamaño de la pantalla_/
+/* Nos adapta la imagen al tamaño de la pantalla */
 background-size: cover
 
-/_Para realizar un degradado al fondo_/
+/* Para realizar un degradado al fondo */
 background: linear-gradient(rgba(84,93,220,.9), rgba(96,171,245,.9)), url(../img/fondo.jpeg)
 
-/_Alinear verticalmente - Espaciado externo_/
+/* Alinear verticalmente - Espaciado externo */
 margin: top bottom right left
 margin: 18vh 0
 
-/_Espaciado interno_/
+/* Espaciado interno */
 padding: top bottom right left
 
-/_Animación de navegación onepage_/
+/* Animación de navegación onepage */
 html        
     scroll-behavior: smooth
 
