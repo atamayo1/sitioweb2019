@@ -3,9 +3,21 @@ $font-poppins: 'Poppins', sans-serif
 //Colores
 $color-blanco: #ffffff
 $color-btn: #5cb8ff
-$color-link-hover: #250035
-$color-btn-hover: slateblue
-    
+$color-link-hover: rgba(255,255,255,.5)
+$color-btn-hover: rgba(91,184,255,.8)
+$color-degradado: rgba(34,85,217,.9), rgba(46,163,242,.9)
+$color-btn-front: rgba(34,85,217,.9)
+$color-btn-front-hover: rgba(34,85,217,.8)
+$color-btn-back: rgba(0,0,0,1)
+$color-btn-back-hover: rgba(0,0,0,.8)
+$color-btn-social: rgba(59,89,152,1)
+$color-btn-social-hover: rgba(59,89,152,.8)
+
+$color-btn-rojo: rgba(211,42,32,1)
+$color-btn-hover-rojo: rgba(211,42,32,.7)
+$color-degradado-morado: rgba(84,93,220,.9), rgba(96,171,245,.9)
+$color-degradado-rojo: rgba(211,42,32,.9), rgba(223,124,57,.9)
+
 body
     margin: 0
     padding: 0
@@ -13,7 +25,7 @@ body
 
 //Header
 header 
-    background: linear-gradient(rgba(84,93,220,.9), rgba(96,171,245,.9)), url(../img/fondo.jpeg)
+    background: linear-gradient($color-degradado), url(../img/fondo.jpeg)
     height: 100vh
     background-size: cover
     .content
@@ -22,6 +34,8 @@ header
         max-width: 1280px
         width: 90%
         margin: auto
+        a
+            text-decoration: none
         p.logo
             text-transform: uppercase
             color: $color-blanco 
@@ -89,8 +103,48 @@ header
             text-decoration: none
             width: 128px
             display: inline-block
+        .btnfront, .btnback, .btnsocial
+            width: 90%
+            cursor: pointer
+            margin-bottom: 10px
+        .btnfront
+            background: $color-btn-front
+            display: flex
+            justify-content: space-between
+        .btnfront:hover
+            background: $color-btn-front-hover
+        .btnback
+            background: $color-btn-back
+            display: flex
+            justify-content: space-between
+        .btnback:hover
+            background: $color-btn-back-hover
+        .btnsocial
+            background: $color-btn-social
+            display: flex
+            justify-content: space-between
+        .btnsocial:hover
+            background: $color-btn-social-hover
         a:hover
             background: $color-btn-hover
-        
 
+@media (max-width: 767px) 
+    #sobre-mi .content-sobremi
+        display: block
+        justify-content: center
+        .pc
+            width: 100%
+            img
+                width: 100%
+        .text
+            width: 100%
+            text-align: center
+            p
+                text-align: justify
+                padding: 0 15px
+            a
+                text-align: center
+
+html        
+    scroll-behavior: smooth
 

@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(84, 93, 220, 0.9), rgba(96, 171, 245, 0.9)), url(../img/fondo.jpeg);
+  background: linear-gradient(rgba(34, 85, 217, 0.9), rgba(46, 163, 242, 0.9)), url(../img/fondo.jpeg);
   height: 100vh;
   background-size: cover;
 }
@@ -16,13 +16,16 @@ header .content {
   width: 90%;
   margin: auto;
 }
+header .content a {
+  text-decoration: none;
+}
 header .content p.logo {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bolder;
 }
 header .content p.logo:hover {
-  color: #250035;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 header .content ul {
@@ -37,7 +40,7 @@ header .content ul li a {
   color: #ffffff;
 }
 header .content ul li a:hover {
-  color: #250035;
+  color: rgba(255, 255, 255, 0.5);
 }
 header #content-title-flex {
   display: flex;
@@ -68,7 +71,7 @@ header #content-title-flex a {
   display: inline-block;
 }
 header #content-title-flex a:hover {
-  background: slateblue;
+  background: rgba(91, 184, 255, 0.8);
 }
 
 #sobre-mi h3 {
@@ -100,8 +103,64 @@ header #content-title-flex a:hover {
   width: 128px;
   display: inline-block;
 }
+#sobre-mi .content-sobremi .text .btnfront, #sobre-mi .content-sobremi .text .btnback, #sobre-mi .content-sobremi .text .btnsocial {
+  width: 90%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#sobre-mi .content-sobremi .text .btnfront {
+  background: rgba(34, 85, 217, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+#sobre-mi .content-sobremi .text .btnfront:hover {
+  background: rgba(34, 85, 217, 0.8);
+}
+#sobre-mi .content-sobremi .text .btnback {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+}
+#sobre-mi .content-sobremi .text .btnback:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+#sobre-mi .content-sobremi .text .btnsocial {
+  background: #3b5998;
+  display: flex;
+  justify-content: space-between;
+}
+#sobre-mi .content-sobremi .text .btnsocial:hover {
+  background: rgba(59, 89, 152, 0.8);
+}
 #sobre-mi .content-sobremi .text a:hover {
-  background: slateblue;
+  background: rgba(91, 184, 255, 0.8);
+}
+
+@media (max-width: 767px) {
+  #sobre-mi .content-sobremi {
+    display: block;
+    justify-content: center;
+  }
+  #sobre-mi .content-sobremi .pc {
+    width: 100%;
+  }
+  #sobre-mi .content-sobremi .pc img {
+    width: 100%;
+  }
+  #sobre-mi .content-sobremi .text {
+    width: 100%;
+    text-align: center;
+  }
+  #sobre-mi .content-sobremi .text p {
+    text-align: justify;
+    padding: 0 15px;
+  }
+  #sobre-mi .content-sobremi .text a {
+    text-align: center;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

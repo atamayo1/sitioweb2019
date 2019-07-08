@@ -27,4 +27,8 @@ margin: 18vh 0
 /_Espaciado interno_/
 padding: top bottom right left
 
+/_Animación de navegación onepage_/
+html        
+    scroll-behavior: smooth
+
 
